@@ -36,6 +36,44 @@ npx nx serve chatbot-api
 The server will start at http://localhost:3000/api.
 ## 📡 API Reference
 Chatbot Endpoints
-Method	URL	Description
-GET	/api/chat	Health check to see if the bot is online.
-POST	/api/chat/ask	Interact with the bot. Expects JSON body.
+MMethod,URL,Description
+GET,/api/chat,Health check to see if the bot is online.
+POST,/api/chat/ask,Interact with the bot. Expects JSON body.
+
+Example POST Body:
+JSON
+
+{
+  "userMessage": "hello bot"
+}
+
+Monitoring Endpoint
+Method,URL,Description
+GET,/api/metrics,"View raw Prometheus metrics (CPU, RAM, Message Counts)."
+
+## 🛠️ Commands Used (Development History)
+
+For reference, here are the core commands used to build this workspace:
+
+    Create Workspace: npx create-nx-workspace@latest org-c
+
+    Generate Library: npx nx g @nx/js:library chatbot-logic --directory=libs/chatbot-logic
+
+    Install Monitoring: npm install @willsoto/nestjs-prometheus prom-client
+
+
+## 📊 Custom Metrics
+
+We have implemented a custom Prometheus Counter named chatbot_messages_total.
+
+    Every time a successful POST is made to /ask, the counter increments by 1.
+
+    You can find this metric by searching for it in the /api/metrics page.
+
+## 📊 Custom Metrics
+
+We have implemented a custom Prometheus Counter named chatbot_messages_total.
+
+    Every time a successful POST is made to /ask, the counter increments by 1.
+
+    You can find this metric by searching for it in the /api/metrics page.
