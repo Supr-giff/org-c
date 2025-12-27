@@ -19,24 +19,25 @@ A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This p
     Node.js (v18 or higher)
     npm
 <br>
- 2. Installation<br>
 
-Copy and run these commands in your terminal:
+ # 2. Installation<br>
+
+### Copy and run these commands in your terminal:
 <br>**Bash**<br>
 
-**git clone https://github.com/Supr-giff/org-c.git
-cd org-c
+**git clone https://github.com/Supr-giff/org-c.git <br>
+cd org-c<br>
 npm install**
 <br>
 
 # 3. Running the App<br>
 
-To start the chatbot server, run:
+### To start the chatbot server, run:
 <br>**Bash**<br>
 
 **npx nx serve chatbot-api**
 <br>
-The server will be live at: http://localhost:3000/api
+### The server will be live at: http://localhost:3000/api
 <br>
 # 📡 API Reference
 Chatbot Endpoints
