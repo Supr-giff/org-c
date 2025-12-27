@@ -38,8 +38,8 @@ npm install**
 # 📡 API Reference
 ## Chatbot Endpoints<br>
 ### Method	URL	Description<br>
-GET	/api/chat	Check if the bot is online.<br>
-POST	/api/chat/ask	Send a message to the bot.
+GET	**/api/chat**	Check if the bot is online.<br>
+POST **/api/chat/ask**	Send a message to the bot.
 <br>
 Example Request Body:
 JSON
@@ -50,7 +50,7 @@ JSON
 
 Monitoring Endpoint<br>
 Method	URL	Description<br>
-GET	/api/metrics	View system health (CPU, RAM, and Message counts).<br>
+GET	**/api/metrics**	View system health (CPU, RAM, and Message counts).<br>
 # 📊 Monitoring & Metrics
 
 We use a custom Prometheus Counter to track usage:
