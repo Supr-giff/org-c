@@ -19,22 +19,21 @@ This project is a professional-grade Chatbot API built using a Monorepo architec
 Ensure you have Node.js (v18+) and npm installed.
 
 ### 2. Installation
-Clone the repository and install the dependencies:
-**Bash**
+Clone the repository and install the dependencies:<br>
+**Bash**<br>
 git clone https://github.com/Supr-giff/org-c.git
 cd org-c
 npm install
 
 ### 3. Running the Application
 
-To start the chatbot server:
-**Bash**
-
+To start the chatbot server:<br>
+**Bash**<br>
 npx nx serve chatbot-api
-
+<br>
 The server will start at http://localhost:3000/api.
 ## 📡 API Reference
-Chatbot Endpoints
+Chatbot Endpoints<br>
 MMethod,URL,Description
 GET,/api/chat,Health check to see if the bot is online.
 POST,/api/chat/ask,Interact with the bot. Expects JSON body.
