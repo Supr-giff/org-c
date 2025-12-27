@@ -1,7 +1,8 @@
 # 🤖 Org-C Chatbot
 
 A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This project is designed for customer support, featuring a "Brain vs. Mouth" architecture where the logic is separated from the API for maximum scalability.
-🏗️ Project Evolution
+<br>
+# 🏗️ Project Evolution
 
 ## Four key stages of project:
     1. Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
@@ -15,10 +16,10 @@ A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This p
 # 🚀 Getting Started
 ### 1. Prerequisites<br>
 
-    **Node.js (v18 or higher)
-    npm**
+    Node.js (v18 or higher)
+    npm
 <br>
-### 2. Installation
+ 2. Installation<br>
 
 Copy and run these commands in your terminal:
 <br>**Bash**<br>
@@ -36,12 +37,13 @@ To start the chatbot server, run:
 **npx nx serve chatbot-api**
 <br>
 The server will be live at: http://localhost:3000/api
+<br>
 # 📡 API Reference
 Chatbot Endpoints
 Method	URL	Description
 GET	/api/chat	Check if the bot is online.
 POST	/api/chat/ask	Send a message to the bot.
-
+<br>
 Example Request Body:
 JSON
 
