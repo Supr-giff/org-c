@@ -4,13 +4,13 @@ A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This p
 🏗️ Project Evolution
 
 ## Four key stages of project:
-    ### 1. Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
+    1. Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
 
-    ### 2. The Mouth (API): Built a NestJS service to handle user requests and communication.
+    2. The Mouth (API): Built a NestJS service to handle user requests and communication.
 
-    ### 3. The Brain (Logic): Created a Shared Library to hold the chatbot's decision-making logic.
-
-    ### 4. Health Tracking: Added Prometheus to monitor system performance and message counts in real-time.
+    3. The Brain (Logic): Created a Shared Library to hold the chatbot's decision-making logic.
+    
+    4. Health Tracking: Added Prometheus to monitor system performance and message counts in real-time.
 
 # 🚀 Getting Started
 ### 1. Prerequisites
@@ -22,7 +22,7 @@ A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This p
 ### 2. Installation
 
 Copy and run these commands in your terminal:
-Bash
+**Bash**<br>
 
 git clone https://github.com/Supr-giff/org-c.git
 cd org-c
@@ -31,7 +31,7 @@ npm install
 # 3. Running the App
 
 To start the chatbot server, run:
-Bash
+**Bash**<br>
 
 npx nx serve chatbot-api
 
