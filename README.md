@@ -21,7 +21,7 @@ A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This p
 
  # 2. Installation<br>
 ### Copy and run these commands in your terminal:
-<br>Bash<br>
+<br>Bash:<br>
 **git clone https://github.com/Supr-giff/org-c.git <br>
 cd org-c<br>
 npm install**
@@ -29,16 +29,16 @@ npm install**
 
 # 3. Running the App<br>
 ### To start the chatbot server, run:
-<br>Bash<br>
+<br>Bash:<br>
 **npx nx serve chatbot-api**
 <br>
 ### The server will be live at: http://localhost:3000/api
 <br>
 
 # 📡 API Reference
-Chatbot Endpoints
-Method	URL	Description
-GET	/api/chat	Check if the bot is online.
+## Chatbot Endpoints<br>
+### Method	URL	Description<br>
+GET	/api/chat	Check if the bot is online.<br>
 POST	/api/chat/ask	Send a message to the bot.
 <br>
 Example Request Body:
@@ -48,9 +48,9 @@ JSON
   "userMessage": "Hello bot!"
 }
 
-Monitoring Endpoint
-Method	URL	Description
-GET	/api/metrics	View system health (CPU, RAM, and Message counts).
+Monitoring Endpoint<br>
+Method	URL	Description<br>
+GET	/api/metrics	View system health (CPU, RAM, and Message counts).<br>
 # 📊 Monitoring & Metrics
 
 We use a custom Prometheus Counter to track usage:
@@ -64,7 +64,7 @@ We use a custom Prometheus Counter to track usage:
 If you want to recreate this workspace, these were the core commands used:
 
 ## Create the project:
-<br>**Bash**<br>
+<br>Bash:<br>
 **npx create-nx-workspace@latest org-c**
 <br>
 ## Generate the logic library:
