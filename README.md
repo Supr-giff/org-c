@@ -32,7 +32,7 @@ npm install**
 <br>Bash:<br>
 **npx nx serve chatbot-api**
 <br>
-### The server will be live at: http://localhost:3000/api
+### The server will be live at: http://localhost:3000/api/chat
 <br>
 
 # 📡 API Reference
