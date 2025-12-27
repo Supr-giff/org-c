@@ -65,16 +65,17 @@ If you want to recreate this workspace, these were the core commands used:
 
 ## Create the project:
 <br>**Bash**<br>
-
 **npx create-nx-workspace@latest org-c**
 <br>
-Generate the logic library:
-<br>**Bash**<br>
-
+## Generate the logic library:
+<br>Bash:<br>
 **npx nx g @nx/js:library chatbot-logic --directory=libs/chatbot-logic**
 <br>
-
+## Install NestJS application
+<br>Bash:<br>
+**npx nx g @nx/nest:app chatbot-api**
+<br>
 ## Install monitoring tools:
-<br>**Bash** <br>
+<br>Bash:<br>
 **npm install @willsoto/nestjs-prometheus prom-client**
 <br>
