@@ -1,27 +1,26 @@
-# Org-C: NestJS Chatbot with Nx & Prometheus
+# org-c chatbot
+A chatbot which will be benificial for customre support with AI-powered custumization in furture update built with nestJS in NX monorepository.
 
 This is a comprehensive README.md that captures my entire journey from the initial Nx workspace creation to the implementation of the Prometheus monitoring.
 
 This project is a professional-grade Chatbot API built using a Monorepo architecture. It demonstrates the separation of concerns by keeping the "Brain" (Logic) in a library and the "Mouth" (API) in an application, all while being monitored by Prometheus.
 ### 🏗️ Project Evolution (What we built)
 
-   #### Nx Workspace: Created a managed monorepo for scaling.
+   #### 1. Nx Workspace: Created a scalable Nx Workspace to manage all code in one place.
 
-   #### NestJS API: Generated a chatbot-api to handle HTTP requests.
+   #### 2. NestJS API: Built a NestJS service (chatbot-api) to handle all incoming user requests.
 
-  #### Shared Library: Generated @org/chatbot-logic to house the chatbot's decision-making.
+  #### 3. Core Logic Library: Isolated the bot's "brain" into a shared library (chatbot-logic) for better reusability.
 
-   #### Observability: Integrated Prometheus to track application health and message counts.
+   #### Live Monitoring: Integrated Prometheus to track system health and message traffic in real-time.
 
 ## 🚀 Getting Started (For New Machines)
 ### 1. Prerequisites
-
 Ensure you have Node.js (v18+) and npm installed.
+
 ### 2. Installation
-
 Clone the repository and install the dependencies:
-Bash
-
+**Bash**
 git clone https://github.com/Supr-giff/org-c.git
 cd org-c
 npm install
@@ -29,7 +28,7 @@ npm install
 ### 3. Running the Application
 
 To start the chatbot server:
-Bash
+**Bash**
 
 npx nx serve chatbot-api
 
