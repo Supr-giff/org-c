@@ -1,77 +1,81 @@
-# org-c chatbot
-A chatbot which will be benificial for customre support with AI-powered custumization in furture update built with nestJS in NX monorepository.
+🤖 Org-C Chatbot
 
-This is a comprehensive README.md that captures my entire journey from the initial Nx workspace creation to the implementation of the Prometheus monitoring.
+A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This project is designed for customer support, featuring a "Brain vs. Mouth" architecture where the logic is separated from the API for maximum scalability.
+🏗️ Project Evolution
 
-This project is a professional-grade Chatbot API built using a Monorepo architecture. It demonstrates the separation of concerns by keeping the "Brain" (Logic) in a library and the "Mouth" (API) in an application, all while being monitored by Prometheus.
-### 🏗️ Project Evolution (What we built)
+I built this project in four key stages:
 
-   #### 1. Nx Workspace: Created a scalable Nx Workspace to manage all code in one place.
+    Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
 
-   #### 2. NestJS API: Built a NestJS service (chatbot-api) to handle all incoming user requests.
+    The Mouth (API): Built a NestJS service to handle user requests and communication.
 
-  #### 3. Core Logic Library: Isolated the bot's "brain" into a shared library (chatbot-logic) for better reusability.
+    The Brain (Logic): Created a Shared Library to hold the chatbot's decision-making logic.
 
-   #### Live Monitoring: Integrated Prometheus to track system health and message traffic in real-time.
+    Health Tracking: Added Prometheus to monitor system performance and message counts in real-time.
 
-## 🚀 Getting Started (For New Machines)
-### 1. Prerequisites
-Ensure you have Node.js (v18+) and npm installed.
+🚀 Getting Started
+1. Prerequisites
 
-### 2. Installation
-Clone the repository and install the dependencies:<br>
-**Bash**<br>
+    Node.js (v18 or higher)
+
+    npm
+
+2. Installation
+
+Copy and run these commands in your terminal:
+Bash
+
 git clone https://github.com/Supr-giff/org-c.git
 cd org-c
 npm install
 
-### 3. Running the Application
+3. Running the App
 
-To start the chatbot server:<br>
-**Bash**<br>
+To start the chatbot server, run:
+Bash
+
 npx nx serve chatbot-api
-<br>
-The server will start at http://localhost:3000/api.
-## 📡 API Reference
-Chatbot Endpoints<br>
-MMethod,URL,Description
-GET,/api/chat,Health check to see if the bot is online.
-POST,/api/chat/ask,Interact with the bot. Expects JSON body.
 
-Example POST Body:
+The server will be live at: http://localhost:3000/api
+📡 API Reference
+Chatbot Endpoints
+Method	URL	Description
+GET	/api/chat	Check if the bot is online.
+POST	/api/chat/ask	Send a message to the bot.
+
+Example Request Body:
 JSON
 
 {
-  "userMessage": "hello bot"
+  "userMessage": "Hello bot!"
 }
 
 Monitoring Endpoint
-Method,URL,Description
-GET,/api/metrics,"View raw Prometheus metrics (CPU, RAM, Message Counts)."
+Method	URL	Description
+GET	/api/metrics	View system health (CPU, RAM, and Message counts).
+📊 Monitoring & Metrics
 
-## 🛠️ Commands Used (Development History)
+We use a custom Prometheus Counter to track usage:
 
-For reference, here are the core commands used to build this workspace:
+    Metric Name: chatbot_messages_total
 
-    Create Workspace: npx create-nx-workspace@latest org-c
+    How it works: Every time someone successfully uses the /ask endpoint, this number goes up by 1. This helps us track how busy the bot is.
 
-    Generate Library: npx nx g @nx/js:library chatbot-logic --directory=libs/chatbot-logic
+🛠️ Development History
 
-    Install Monitoring: npm install @willsoto/nestjs-prometheus prom-client
+If you want to recreate this workspace, these were the core commands used:
 
+Create the project:
+Bash
 
-## 📊 Custom Metrics
+npx create-nx-workspace@latest org-c
 
-We have implemented a custom Prometheus Counter named chatbot_messages_total.
+Generate the logic library:
+Bash
 
-    Every time a successful POST is made to /ask, the counter increments by 1.
+npx nx g @nx/js:library chatbot-logic --directory=libs/chatbot-logic
 
-    You can find this metric by searching for it in the /api/metrics page.
+Install monitoring tools:
+Bash
 
-## 📊 Custom Metrics
-
-We have implemented a custom Prometheus Counter named chatbot_messages_total.
-
-    Every time a successful POST is made to /ask, the counter increments by 1.
-
-    You can find this metric by searching for it in the /api/metrics page.
+npm install @willsoto/nestjs-prometheus prom-client
