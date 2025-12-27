@@ -1,26 +1,25 @@
-🤖 Org-C Chatbot
+# 🤖 Org-C Chatbot
 
 A professional-grade chatbot API built with NestJS inside an Nx Monorepo. This project is designed for customer support, featuring a "Brain vs. Mouth" architecture where the logic is separated from the API for maximum scalability.
 🏗️ Project Evolution
 
-I built this project in four key stages:
+## Four key stages of project:
+    ### 1. Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
 
-    Monorepo Foundation: Set up an Nx Workspace to keep all code organized and scalable.
+    ### 2. The Mouth (API): Built a NestJS service to handle user requests and communication.
 
-    The Mouth (API): Built a NestJS service to handle user requests and communication.
+    ### 3. The Brain (Logic): Created a Shared Library to hold the chatbot's decision-making logic.
 
-    The Brain (Logic): Created a Shared Library to hold the chatbot's decision-making logic.
+    ### 4. Health Tracking: Added Prometheus to monitor system performance and message counts in real-time.
 
-    Health Tracking: Added Prometheus to monitor system performance and message counts in real-time.
-
-🚀 Getting Started
-1. Prerequisites
+# 🚀 Getting Started
+### 1. Prerequisites
 
     Node.js (v18 or higher)
 
     npm
 
-2. Installation
+### 2. Installation
 
 Copy and run these commands in your terminal:
 Bash
@@ -29,7 +28,7 @@ git clone https://github.com/Supr-giff/org-c.git
 cd org-c
 npm install
 
-3. Running the App
+# 3. Running the App
 
 To start the chatbot server, run:
 Bash
